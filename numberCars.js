@@ -19,8 +19,6 @@ const addNumberCar = (letters, numbers) => {
     }
   }
 
-  // console.log("carsNumbers", carsNumbers.length, carsNumbers);
-
   return carsNumbers;
 };
 
