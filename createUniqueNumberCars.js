@@ -1,7 +1,4 @@
-// const englishLetters = "abcdefghijklmnopqrstuvwxyz".split("");
-// const numberList = "0123456789".split("");
-
-const addNumberCar = (letters, numbers) => {
+const addUniqueNumberCar = (letters, numbers) => {
   let carNumber = "";
   const carsNumbers = [];
 
@@ -34,4 +31,4 @@ const addNumberCar = (letters, numbers) => {
   return carsNumbers;
 };
 
-module.exports = addNumberCar;
+module.exports = addUniqueNumberCar;

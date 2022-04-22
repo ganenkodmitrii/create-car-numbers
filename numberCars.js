@@ -1,6 +1,3 @@
-// const englishLetters = "abcdefghijklmnopqrstuvwxyz".split("");
-// const numberList = "0123456789".split("");
-
 const addNumberCar = (letters, numbers) => {
   let carNumber = "";
   const carsNumbers = [];
@@ -10,8 +7,7 @@ const addNumberCar = (letters, numbers) => {
       for (let e = 0; e < numbers.length; e++) {
         for (let w = 0; w < numbers.length; w++) {
           for (let z = 0; z < numbers.length; z++) {
-            carNumber =
-              letters[x] + letters[j] + numbers[e] + numbers[w] + numbers[z];
+            carNumber = `${letters[x]}${numbers[j]}${letters[e]}${numbers[w]}${letters[z]}`;
             carsNumbers.push(carNumber);
           }
         }

@@ -1,12 +1,18 @@
-const sum = require("./numberCars");
+const addNumberCar = require("./numberCars");
 
-test("adds letter and number ", () => {
-  expect(sum(["c"], ["0", "1"])).toBe([
-    "cc000",
-    "cc010",
-    "cc011",
-    "cc111",
-    "cc101",
-    "cc001",
-  ]);
+const englishLetters = "abcdefghijklmnopqrstuvwxyz".split("");
+const numberList = "0123456789".split("");
+
+const numberCars = addNumberCar(englishLetters, numberList);
+
+it("Include aa111", () => {
+  expect(numberCars[0].includes("a0a0a")).toBe(true);
+});
+
+it("Has a length", () => {
+  expect(numberCars.length > 0).toBe(true);
+});
+
+it(`Has a length of 5 ${numberCars.length}`, () => {
+  expect(numberCars.length === 5).toBe(false);
 });
